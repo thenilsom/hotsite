@@ -5,10 +5,17 @@ html, body {
   height:100%;
   margin: 0px;
   padding: 0px;
-  background-color: #EEEEEE !important;
+  background-color: #ffffff !important;
 }
 
 header {
+  background-image: url(img/banner_principal.png);
+  background-size: cover;
+  background-position: top center;
+  height: 100%;
+}
+
+#praQueFiador {
   background-image: url(img/banner_principal.png);
   background-size: cover;
   background-position: top center;
@@ -20,11 +27,17 @@ header {
   height: 150px;
 }
 
+.icon5 {
+  width: 90px;
+  height: 90px;
+}
+
 .tam-1, .tam-2, .tam-3{
  font-family: inherit;
   font-weight: 500;
   line-height: 1.1;
   color: inherit;
+  font-weight: bold;
 } 
 
 .tam-3{
@@ -38,6 +51,18 @@ header {
   background-image: url(img/banner_principal_responsivo.png);
   }
 
+  .md-display-2 {
+    font-size: 34px;
+    font-weight: 400;
+    line-height: 40px;
+}
+
+.md-display-3 {
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 64px;
+}
+
   .tam-3{
     font-size: 18px;
     margin-top: 10px;
@@ -48,6 +73,12 @@ header {
     width: 90px;
     height: 90px;
   }
+
+  .icon5 {
+  width: 50px;
+  height: 50px;
+  }
+
 }
 
 /* Toolbar area */
@@ -177,7 +208,8 @@ span.name {
   .principal-banner {
     left: 0;
     transform: translate(0, -80%);
-    width: 70%;
+    width: 50%;
+    top: 60%;
   }
 
   .principal-bannerWrapper {
