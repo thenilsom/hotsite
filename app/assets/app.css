@@ -15,8 +15,23 @@ header {
   height: 100%;
 }
 
+.borda{
+  border: solid 4px;
+  border-radius: 19px;
+  padding: 15px;
+}
+
+.glyphicon{
+  padding-right: 16px;
+}
+
 #tituloCaptalizacao{
   background-image: url(img/banner_captalizacao.png);
+  background-size: cover;
+}
+
+#seguroFianca{
+  background-image: url(img/banner_seguro_fianca.png);
   background-size: cover;
 }
 
@@ -43,12 +58,12 @@ header {
 } 
 
 .tam-3{
-  font-size: 24px;
+  font-size: 34px;
   margin-top: 20px;
   margin-bottom: 10px;
 }
 
-@media(max-width: 768px) {
+@media(max-width: 1280px) {
   header {
   background-image: url(img/banner_principal_responsivo.png);
   }
