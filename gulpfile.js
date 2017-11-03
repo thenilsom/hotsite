@@ -1,3 +1,7 @@
+//plugin do gulp
+var gulp = require('gulp');
+
+//plugin do imagemin
 var imagemin = require('gulp-imagemin');
 
 gulp.task('otimizar-img', function(){
