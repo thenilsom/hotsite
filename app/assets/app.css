@@ -33,18 +33,23 @@ footer {
 }
 
 #tituloCaptalizacao{
-  background-image: url(img/banner_captalizacao.png);
-  background-size: cover;
+  background: #F58634; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(to right, #d8640f , #F58634, #d8640f); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(to right, #d8640f , #F58634, #d8640f); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(to right, #d8640f , #F58634, #d8640f); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, #d8640f , #F58634, #d8640f);/* Standard syntax */
 }
 
 #seguroFianca{
-  background-image: url(img/banner_seguro_fianca.png);
-  background-size: cover;
+  background: #1ea6ea; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(to right, #066594 , #1ea6ea, #066594); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(to right, #066594 , #1ea6ea, #066594); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(to right, #066594 , #1ea6ea, #066594); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, #066594 , #1ea6ea, #066594);/* Standard syntax */
 }
 
 #alugueEm3Passos{
-  /*background-color: #e9eceb;*/
-  background: red; /* For browsers that do not support gradients */
+  background: #f7f7f7; /* For browsers that do not support gradients */
   background: -webkit-linear-gradient(to right, #d6d5d5 , #f7f7f7, #d6d5d5); /* For Safari 5.1 to 6.0 */
   background: -o-linear-gradient(to right, #d6d5d5 , #f7f7f7, #d6d5d5); /* For Opera 11.1 to 12.0 */
   background: -moz-linear-gradient(to right, #d6d5d5 , #f7f7f7, #d6d5d5); /* For Firefox 3.6 to 15 */
