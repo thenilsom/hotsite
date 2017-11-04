@@ -33,6 +33,10 @@ footer {
   padding-right: 16px;
 }
 
+#imgFiadorNunca{
+    max-width: 80%;
+  }
+
 #tituloCaptalizacao{
   background: #F58634; /* For browsers that do not support gradients */
   background: -webkit-linear-gradient(to right, #d8640f , #F58634, #d8640f); /* For Safari 5.1 to 6.0 */
