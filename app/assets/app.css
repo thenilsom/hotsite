@@ -22,6 +22,7 @@ footer {
   height: 15%;
 }
 
+
 .borda{
   border: solid 4px;
   border-radius: 19px;
@@ -99,6 +100,10 @@ footer {
     max-width: 100%;
   }
 
+  #imgFiadorNunca{
+    max-width: 50%;
+  }
+
   .md-display-2 {
       font-size: 34px;
       font-weight: 400;
@@ -160,9 +165,18 @@ footer {
     position: relative;
     height: 100%;
   }
+  
+}
 
-  #praQueFiador {
-    background-image: url(img/banner_fiador.png);
-    background-size: cover;
-  }
+/*Estilos de Fonts*/
+.neoSansMedium{
+  font-family: 'NeoSansStd-Medium';
+}
+
+.neoSansUltra{
+  font-family: 'NeoSansStd-Ultra';
+}
+
+.neoSansRegular{
+  font-family: 'NeoSansStd-Regular';
 }
