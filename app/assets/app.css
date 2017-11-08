@@ -37,6 +37,10 @@ footer {
     max-width: 100%;
   }
 
+ #img_din{
+    max-width: 100%;
+  }
+
 #tituloCaptalizacao{
   background: #F58634; /* For browsers that do not support gradients */
   background: -webkit-linear-gradient(to right, #d8640f , #F58634, #d8640f); /* For Safari 5.1 to 6.0 */
@@ -102,7 +106,7 @@ footer {
   }
 
   #img_din{
-    max-width: 100%;
+    max-width: 80%;
   }
 
   .md-display-2 {
@@ -130,6 +134,10 @@ footer {
 @media(max-width: 500px) {
   #imgFiadorNunca{
     max-width: 50%;
+  }
+
+  #img_din{
+    max-width: 100%;
   }
 
   .tam-3{
