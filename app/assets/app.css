@@ -65,6 +65,10 @@ footer {
   background: linear-gradient(to right, #d6d5d5 , #f7f7f7, #d6d5d5);/* Standard syntax */
 }
 
+.img-locacao{
+  max-width: 80%
+}
+
 .icon10 {
   width: 150px;
   height: 150px;
@@ -105,10 +109,6 @@ footer {
   background-image: url(img/banner_principal_responsivo.png);
   }
 
-  #img_din{
-    max-width: 80%;
-  }
-
   .md-display-2 {
       font-size: 34px;
       font-weight: 400;
@@ -136,8 +136,12 @@ footer {
     max-width: 50%;
   }
 
-  #img_din{
+  .img-locacao{
     max-width: 100%;
+  }
+
+  #btnEnviar{
+    max-width: 50%;
   }
 
   .tam-3{
@@ -159,7 +163,7 @@ footer {
 
 .principal-banner {
   color: #FFF;
-  background-color: rgba(0, 0, 0, .5);
+  background-color: rgba(0, 0, 0, 0.04);
   padding: 20px;
   width: 80%;
   border-radius: 5px;
