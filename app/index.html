@@ -29,7 +29,6 @@
   </head>
 
   <body ng-app="app" ng-controller="MainController" ng-cloak>
-
     <header>
     <div class="container principal-bannerWrapper">
       <div class="principal-banner">
@@ -236,9 +235,12 @@
         </div>
     </section>
 
-    <footer>
-      
-    </footer>
+      <!-- Botão ir para o topo -->
+      <md-button class="md-fab md-mini btn-go-top" ng-click="gotoTop()">
+            <md-icon md-svg-src="./assets/svg/ic_arrow_up_24px.svg"></md-icon>
+      </md-button>
+  
+    <footer></footer>
     
 
     <!-- Bibliotecas Angular-Material -->
@@ -262,7 +264,7 @@
                           .primaryPalette('brown')
                           .accentPalette('red');
 
-              });
+              });  
 
     </script> 
 
