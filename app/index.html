@@ -56,183 +56,24 @@
   </div>
     </header>
 
+    <!-- Sessão pra que fiador -->
     <section id="praQueFiador">
-      <div layout="row" layout-xs="column">
-        <div flex="15" flex-xs="100">
-          <img src="./assets/img/fiador_nunca.png" id="imgFiadorNunca">
-        </div>
-
-        <div flex="5" hide-xs style="padding-top: 10%">
-           <img src="./assets/img/logo.png" class="img-responsive">
-        </div>
-
-        <div flex="70" flex-xs="100" layout-padding>
-          <h1 class="md-display-3 neoSansUltra" style="text-align: center;"><b><u>Pra que fiador ?</u></b></h1>
-
-          <p class="tam-3 neoSansRegular" style="text-align: center;"><b> Imagine alugar um imóvel sem pedir para ninguém ser seu fiador? A Maximiza Corretora de Seguros tem a solução ideal para você que deseja alugar sem precisar de fiadores, com muita agilidade e pouca burocracia, onde você irá se preocupar somente com a sua mudança!</b></p>
-        </div>
-
-        <div flex="10" hide-xs style="padding-top: 7%">
-          <img src="./assets/img/logo.png" class="img-responsive">
-        </div>
-
-      </div>     
-        
-        <div class="container">
-          <div layout="row" layout-align="center center">
-                <div flex="50" style="text-align: center;">
-                    <md-icon md-svg-src="./assets/svg/padlock.svg" class="icon5" aria-label="Android "> </md-icon>
-                    <p class="tam-3 neoSansMedium"> titulo de captalização</p>
-                </div>
-                <div flex="50" style="text-align: center;">
-                    <md-icon md-svg-src="./assets/svg/key.svg" class="icon5" aria-label="Android "> </md-icon>
-                    <p class="tam-3 neoSansMedium"> seguro fiança</p>
-                </div>
-            </div>
-        </div>
-         
+      <div data-ng-include="'./src/view/praQueFiador.html'"></div>    
     </section>
 
+    <!-- Sessão titulo captalização -->
     <section id="tituloCaptalizacao">
-        <div layout="row" layout-xs="column" layout-align="center start" layout-padding>
-          <div flex="35" flex-xs="100" style="text-align: center;">
-          <md-icon md-svg-src="./assets/svg/padlock-white.svg" class="icon10" aria-label="Android "> </md-icon>
-            <p class="tam-2 text-white"> titulo de captalização</p>
-
-            <p class="tam-3 text-left text-white borda" style="text-align: left;">
-            Ideal para quem quer alugar imóveis
-            comerciais e residenciais. Não há a
-            necessidade de análise de crédito, com
-            processo rápido e sem burocracia.
-            Você realiza a contratação do
-            Título de Capitalização no momento da 
-            assinatura do seu contrato de aluguel,
-            e ao final do período de permanência, você
-            recebe todo o dinheiro de volta e
-            corrigido pela TR.</p>
-        </div>      
-
-        <div layout="column" layout-lg="row" layout-gt-lg="row" layout-align="center center">
-          <div flex="30" flex-xs="100">
-            <md-list>
-              <md-list-item class="tam-3 text-white">
-                <span class="glyphicon glyphicon-ok"></span>sem burocracia
-              </md-list-item>
-
-              <md-list-item class="tam-3 text-white">
-              <span class="glyphicon glyphicon-ok"></span>sem análise de crédito
-            </md-list-item>
-
-              <md-list-item class="tam-3 text-white">
-              <span class="glyphicon glyphicon-ok"></span>sem comprovante de renda
-            </md-list-item>
-
-              <md-list-item class="tam-3 text-white">
-              <span class="glyphicon glyphicon-ok"></span>processo rápido
-            </md-list-item>
-
-              <md-list-item class="tam-3 text-white">
-              <span class="glyphicon glyphicon-ok"></span>resgate de 100% do valor,<br/> corrigido pela TR.
-            </md-list-item>
-
-            </md-list>      
-          </div>
-
-          <div flex="35" flex-xs="100">
-              <img src="./assets/img/seu_dinheiro_devolta.png" class="img-locacao">
-          </div>
-
-      </div>
-        
-        </div>
-          
+      <div data-ng-include="'./src/view/tituloCaptalizacao.html'"></div>     
     </section>
 
+    <!-- Sessão seguro fiança -->
     <section id="seguroFianca">
-      <div layout="row" layout-xs="column" layout-align="center start" layout-padding>
-        <div flex="35" flex-xs="100" style="text-align: center;" flex-order-gt-md="3">
-            <md-icon md-svg-src="./assets/svg/key-white.svg" class="icon10" aria-label="Android "> </md-icon>
-              <p class="tam-2 text-white"> seguro fiança</p>
-
-            <p class="tam-3 text-left text-white borda" style="text-align: left;">
-              Com o Seguro Fiança, seu fiador é a própria
-              seguradora em todos os aspectos da locação,
-              como aluguéis, IPTU, condomínio, água, luz e
-              demais despesas de sua obrigação no contrato
-              de aluguel. Você contrata no momento de sua
-              locação e pode pagar no cartão de 
-              crédito ou no boleto, e ainda conta com
-              assistências e cobertuas exclusivas.</p>
-          </div>
-
-      <div layout="column" layout-lg="row" layout-gt-lg="row" layout-align="center center">
-        <div flex="30" flex-xs="100" flex-order-gt-md="2">
-          <md-list>
-            <md-list-item class="tam-3 text-white">
-              <span class="glyphicon glyphicon-ok"></span>pagamento parcelado
-            </md-list-item>
-
-            <md-list-item class="tam-3 text-white">
-            <span class="glyphicon glyphicon-ok"></span>contrato 100% garantido
-          </md-list-item>
-
-            <md-list-item class="tam-3 text-white">
-            <span class="glyphicon glyphicon-ok"></span>sem necessidade de fiador
-          </md-list-item>
-
-            <md-list-item class="tam-3 text-white">
-            <span class="glyphicon glyphicon-ok"></span>assistência 24 horas
-          </md-list-item>
-
-            <md-list-item class="tam-3 text-white">
-            <span class="glyphicon glyphicon-ok"></span>coberturas exclusivas
-          </md-list-item>
-
-          </md-list>      
-        </div>
-
-        <div flex="35" flex-xs="100" flex-order-gt-md="1">
-          <img src="./assets/img/seguranca_garantia.png" class="img-locacao">
-        </div>
-
-      </div>
-              
-      </div>
-          
+      <div data-ng-include="'./src/view/seguroFianca.html'"></div>
     </section>
 
+    <!-- Sessão alugue em 3 passos -->
     <section id="alugueEm3Passos">
-          <div layout="row" layout-align="center center" layout-padding>
-            <h1 class="md-display-3 neoSansUltra" style="text-align: center;">
-              <b><u>Alugue em apenas 3 passos!</u></b>
-            </h1>
-          </div>
-
-          <div layout="row" layout-align="center center" layout-padding>
-            
-            <!-- Btn01 -->
-              <div flex="30" flex-xs="100">
-                <img src="./assets/img/btn01.png" class="img-responsive">
-              </div>
-            <!-- Btn02 -->
-              <div flex="30" flex-xs="100">
-                <img src="./assets/img/btn02.png" class="img-responsive">
-              </div>
-            <!-- Btn03 -->
-              <div flex="30" flex-xs="100">
-                <img src="./assets/img/btn03.png" class="img-responsive">
-              </div>
-          </div>
-
-        <div layout="row" layout-align="center center" layout-padding>
-          <div flex="60" flex-xs="100">
-           <p class="tam-3 text-center neoSansRegular">Sua locação muito mais fácil e sem burocracia. Você precisa apenas escolher o imóvel, enviar seus documentos e assinar seu contrato de aluguel. E o melhor de tudo, sem pedir favor a ninguém e com toda garantia e segurança.</p>
-          </div>
-        </div>
-
-        <div layout="row" layout-align="center center" layout-padding>
-          <img src="./assets/img/btnEnviarDocs.png" id="btnEnviar" class="img-responsive">
-        </div>
+      <div data-ng-include="'./src/view/alugueEm3Passos.html'"></div>    
     </section>
 
       <!-- Botão ir para o topo -->
