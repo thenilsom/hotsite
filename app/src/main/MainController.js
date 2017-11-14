@@ -2,10 +2,15 @@
        .module('app')
        .controller('MainController', ['$scope', function($scope){
 
-          //controla o hide/show do botão ir para topo
+        
+          //controla o hide/show do botão ir para topo quando chegar no fim da pagina
 	      $(window).scroll(function () {
-	         if ($(this).scrollTop() > 100) {
-	         	$('.btn-go-top').addClass('display').fadeIn("slow");
+          //usar esse if para exibir o btn ir para o top quando o usuario rolar a pagina
+          //if ($(this).scrollTop() > 100); 
+
+          var maxTop = document.body.scrollHeight - (document.body.clientHeight + 100);
+	         if (parseInt($(this).scrollTop()) >= maxTop) {
+	         	$('.btn-go-top').addClass('display').fadeIn();
 	         } else {
 	         	$('.btn-go-top').removeClass('display').fadeOut();
 	         }
