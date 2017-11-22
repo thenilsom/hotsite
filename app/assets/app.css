@@ -31,6 +31,18 @@ h1 strong{
   padding: 15px;
 }
 
+#borda-icones{
+  border: solid 1px;
+  border-radius: 5px;
+  border-bottom: 0px;
+  width: 59%;
+  height: 70%;
+  position: absolute;
+  top: 3%;
+  left: 21%;
+  z-index: -1;
+}
+
 .glyphicon{
   padding-right: 16px;
 }
@@ -156,8 +168,7 @@ h1 strong{
 .principal-banner {
   color: #FFF;
   background-color: rgba(0, 0, 0, 0.04);
-  padding: 20px;
-  width: 80%;
+  width: 115%;
   border-radius: 5px;
   position: absolute;
   top: 50%;
@@ -171,7 +182,7 @@ h1 strong{
   .principal-banner {
     left: 0;
     transform: translate(0, -80%);
-    width: 60%;
+    width: 80%;
     top: 70%;
   }
 
