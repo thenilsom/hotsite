@@ -224,6 +224,21 @@
 }
 
 @font-face{
-  font-family: 'NeoSansStd';
+  font-family: 'NeoSansStd-Ultra';
   src : url(NeoSansStd-Ultra.otf);
+}
+
+@font-face{
+  font-family: 'NeoSansStd-Medium';
+  src : url(NeoSansStd-Medium.otf);
+}
+
+@font-face{
+  font-family: 'NeoSansStd-Regular';
+  src : url(NeoSansStd-Regular.otf);
+}
+
+@font-face{
+  font-family: 'Impact';
+  src : url(IMPACT.TTF);
 }

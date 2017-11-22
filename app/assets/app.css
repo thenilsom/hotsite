@@ -16,10 +16,12 @@ header {
 }
 
 footer {
-  background-image: url(img/banner_footer.png);
-  background-size: cover;
-  background-position: top center;
-  height: 15%;
+  background-color: #133454;
+}
+
+h1 strong{
+  font-size: 55px;
+  font-weight: 500;
 }
 
 
@@ -43,18 +45,11 @@ footer {
 
 #tituloCaptalizacao{
   background: #F58634; /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(to right, #d8640f , #F58634, #d8640f); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(to right, #d8640f , #F58634, #d8640f); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(to right, #d8640f , #F58634, #d8640f); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(to right, #d8640f , #F58634, #d8640f);/* Standard syntax */
 }
 
 #seguroFianca{
-  background: #1ea6ea; /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(to right, #066594 , #1ea6ea, #066594); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(to right, #066594 , #1ea6ea, #066594); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(to right, #066594 , #1ea6ea, #066594); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(to right, #066594 , #1ea6ea, #066594);/* Standard syntax */
+  background: #0a80bb; /* For browsers that do not support gradients */
+ 
 }
 
 #alugueEm3Passos{
@@ -83,14 +78,6 @@ footer {
   color: #ffffff !important;
 }
 
-.tam-1, .tam-2, .tam-3, .tam-4{
- font-family: inherit;
-  font-weight: 500;
-  line-height: 1.1;
-  color: inherit;
-  font-weight: bold;
-}
-
 .tam-2{
   font-size: 44px;
   margin-top: 20px;
@@ -107,6 +94,11 @@ footer {
 @media(max-width: 1280px) {
   header {
   background-image: url(img/banner_principal_responsivo.png);
+  }
+
+  h1 strong{
+    font-size: 40px;
+    font-weight: 500;
   }
 
   .md-display-2 {
@@ -212,4 +204,8 @@ footer {
 
 .neoSansRegular{
   font-family: 'NeoSansStd-Regular';
+}
+
+.impact{
+  font-family: 'impact';
 }

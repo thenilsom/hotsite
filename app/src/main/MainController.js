@@ -8,7 +8,7 @@
           //usar esse if para exibir o btn ir para o top quando o usuario rolar a pagina
           //if ($(this).scrollTop() > 100); 
 
-          var maxTop = document.body.scrollHeight - (document.body.clientHeight + 100);
+          var maxTop = document.body.scrollHeight - (document.body.clientHeight + 300);
 	         if (parseInt($(this).scrollTop()) >= maxTop) {
 	         	$('.btn-go-top').addClass('display').fadeIn();
 	         } else {
