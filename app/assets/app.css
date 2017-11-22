@@ -38,7 +38,7 @@ h1 strong{
   width: 59%;
   height: 70%;
   position: absolute;
-  top: 3%;
+  top: 0%;
   left: 21%;
   z-index: -1;
 }
@@ -113,12 +113,7 @@ h1 strong{
     font-weight: 500;
   }
 
-  .md-display-2 {
-      font-size: 34px;
-      font-weight: 400;
-      line-height: 40px;
-  }
-
+  
   .md-display-3 {
       font-size: 40px;
       font-weight: 400;
@@ -148,6 +143,12 @@ h1 strong{
     max-width: 50%;
   }
 
+  .md-display-2 {
+      font-size: 30px;
+      font-weight: 400;
+      line-height: 40px;
+  }
+
   .tam-3{
     font-size: 18px;
     margin-top: 10px;
@@ -167,9 +168,7 @@ h1 strong{
 
 .principal-banner {
   color: #FFF;
-  background-color: rgba(0, 0, 0, 0.04);
-  width: 115%;
-  border-radius: 5px;
+  width: 100%;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -182,7 +181,7 @@ h1 strong{
   .principal-banner {
     left: 0;
     transform: translate(0, -80%);
-    width: 80%;
+    width: 75%;
     top: 70%;
   }
 
