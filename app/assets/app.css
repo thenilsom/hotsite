@@ -24,11 +24,34 @@ h1 strong{
   font-weight: 500;
 }
 
+.nav>li>a {
+    background: #EEEEEE;
+    color: #686367; 
+}
+
+.nav-pills>li>a {
+  border-top-right-radius: 2em !important;
+}
+
+md-input-container {
+    margin: 10px 0;
+}
+
+md-input-container input[type="text"] {
+    text-transform: uppercase;
+}
+
 
 .borda{
   border: solid 4px;
   border-radius: 19px;
   padding: 15px;
+}
+
+.borda-formulario{
+  border: solid 1px;
+  border-color: #cecccc;
+  border-radius: 5px;
 }
 
 #borda-icones{

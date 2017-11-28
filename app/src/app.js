@@ -2,7 +2,7 @@
   'use strict';
 
   // Prepare the 'users' module for subsequent registration of controllers and delegates
-  angular.module('app', [ 'ngMaterial' ]);
+  angular.module('app', [ 'ngMaterial', 'diretiva', 'angularFileUpload' ]);
 
 
 })();
