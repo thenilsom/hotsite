@@ -1,0 +1,116 @@
+<md-input-container class="md-block">
+      <label for="finalidade">Finalidade Imóvel</label>
+      <input type="number" id="finalidade" name="finalidade" ng-model="cadastro.imovel.finalidade" 
+     ng-tabindex="2">
+</md-input-container>
+
+<md-input-container class="md-block">
+      <label>Tipo de Imóvel</label>
+      <md-select ng-model="cadastro.imovel.tipo">
+        <md-option value="apartamento">Apartamento</md-option>
+        <md-option value="casa">Casa</md-option>
+        <md-option value="condominio">Condomínio Fechado</md-option>
+      </md-select>
+    </md-input-container>
+
+    <md-input-container class="md-block">
+      <label>Motivo da Locação</label>
+      <md-select ng-model="cadastro.imovel.motivoLocacao">
+        <md-option value="Casamento">Casamento</md-option>
+        <md-option value="Para Terceiros">Para Terceiros</md-option>
+        <md-option value="Renovação com Aumento de Valores">Renovação com Aumento de Valores</md-option>
+        <md-option value="Imóvel Próximo de Familiares">Imóvel Próximo de Familiares</md-option>
+        <md-option value="Redução de Custo">Redução de Custo</md-option>
+        <md-option value="Separação">Separação</md-option>
+        <md-option value="Transferência de Empresa">Transferência de Empresa</md-option>
+        <md-option value="Independência">Independência</md-option>
+        <md-option value="Endosso da Apólice">Endosso da Apólice</md-option>
+        <md-option value="Próximo a Insituição de Ensino">Próximo a Insituição de Ensino</md-option>
+        <md-option value="Funcionário da Empresa do Pretendente">Funcionário da Empresa do Pretendente</md-option>
+        <md-option value="Cancelamento de Apólice Troca de Imóvel">Cancelamento de Apólice Troca de Imóvel</md-option>
+        <md-option value="Venda de Imóvel Próprio">Venda de Imóvel Próprio</md-option>
+        <md-option value="Troca de Garantia da Atual Locação">Troca de Garantia da Atual Locação</md-option>
+        <md-option value="Locação Adicional">Locação Adicional</md-option>
+        <md-option value="Próximo ao Trabalho">Próximo ao Trabalho</md-option>
+        <md-option value="Locação em Vigor">Locação em Vigor</md-option>
+        <md-option value="Apólice Vencida">Apólice Vencida</md-option>
+      </md-select>
+    </md-input-container>
+
+    <md-input-container class="md-block">
+      <label for="cepImovel">CEP</label>
+      <input type="number" id="cepImovel" name="cepImovel" ng-model="cadastro.imovel.cep" 
+      ng-blur="pesquisarCep(cadastro.imovel)" ng-tabindex="2">
+    </md-input-container>
+
+    <md-input-container class="md-block">
+      <label for="estadoImovel">Estado</label>
+      <input type="text" id="estadoImovel" upper name="estadoImovel" 
+      ng-model="cadastro.imovel.estado"  ng-tabindex="2">
+    </md-input-container>
+
+    <md-input-container class="md-block">
+      <label for="cidadeImovel">Cidade</label>
+      <input type="text" id="cidadeImovel" upper name="cidadeImovel" 
+      ng-model="cadastro.imovel.cidade"  ng-tabindex="2">
+    </md-input-container>
+
+     <md-input-container class="md-block">
+      <label for="enderecoImovel">Endereço</label>
+      <input type="text" id="enderecoImovel" upper name="enderecoImovel" 
+      ng-model="cadastro.imovel.endereco"  ng-tabindex="2">
+    </md-input-container>
+
+    <md-input-container class="md-block">
+      <label for="bairroImovel">Bairro</label>
+      <input type="text" id="bairroImovel" upper name="bairroImovel" 
+      ng-model="cadastro.imovel.bairro"  ng-tabindex="2">
+    </md-input-container>
+
+     <md-input-container class="md-block">
+      <label for="numeroImovel">Numero</label>
+      <input type="number" id="numeroImovel" name="numeroImovel" 
+      ng-model="cadastro.imovel.numero" ng-tabindex="2">
+    </md-input-container>
+
+     <md-input-container class="md-block">
+      <label for="aluguel">Aluguel(R$)</label>
+      <input type="number" id="aluguel" name="aluguel" 
+      ng-model="cadastro.imovel.aluguel" ng-tabindex="2">
+    </md-input-container>
+
+    <md-input-container class="md-block">
+      <label for="iptu">Iptu Mensal(R$)</label>
+      <input type="number" id="iptu" name="iptu" 
+      ng-model="cadastro.imovel.iptu" ng-tabindex="2">
+    </md-input-container>
+
+    <md-input-container class="md-block">
+      <label for="condominio">Condomínio(R$)</label>
+      <input type="number" id="condominio" name="condominio" 
+      ng-model="cadastro.imovel.condominio" ng-tabindex="2">
+    </md-input-container>
+
+    <md-input-container class="md-block">
+      <label for="agua">Água(R$)</label>
+      <input type="number" id="agua" name="agua" 
+      ng-model="cadastro.imovel.agua" ng-tabindex="2">
+    </md-input-container>
+
+    <md-input-container class="md-block">
+      <label for="luz">Luz(R$)</label>
+      <input type="number" id="luz" name="luz" 
+      ng-model="cadastro.imovel.luz" ng-tabindex="2">
+    </md-input-container>
+
+    <md-input-container class="md-block">
+      <label for="gas">Gás Canalizado(R$)</label>
+      <input type="number" id="gas" name="gas" 
+      ng-model="cadastro.imovel.gas" ng-tabindex="2">
+    </md-input-container>
+
+    <md-input-container class="md-block">
+      <label for="total">Total(R$)</label>
+      <input type="number" id="total" name="total" 
+      ng-model="cadastro.imovel.total" ng-tabindex="2">
+    </md-input-container>

@@ -1,0 +1,173 @@
+ <div layout="row" layout-padding>
+   <md-input-container class="md-block" flex="50">
+      <label for="nome">Nome</label>
+      <input type="text" id="nome" upper name="nome" 
+      ng-model="cadastro.pretendente.nome" ng-tabindex="1">
+    </md-input-container>
+  
+
+    <md-input-container class="md-block" flex="25">
+      <label for="cpf">CPF</label>
+      <input mobile="number" id="cpf" name="cpf" mascara="999.999.999-99" 
+      ng-model="cadastro.pretendente.cpf" ng-tabindex="2">
+    </md-input-container>
+
+    <md-input-container flex="25">
+      <label for="dataNascimento">Data Nascimento</label>
+      <md-datepicker id="dataNascimento" name="dataNascimento" ng-model="cadastro.pretendente.dataNascimento" ng-tabindex="3">
+      </md-datepicker>
+    </md-input-container>
+
+  </div>
+
+<div layout="row" layout-padding>
+    <md-input-container class="md-block" flex="40">
+      <label for="numDoc">Numero do Documento</label>
+      <input type="number" id="numDoc" name="numDoc" ng-model="cadastro.pretendente.numDoc" 
+      ng-tabindex="4">
+    </md-input-container>
+
+    <md-input-container class="md-block" flex="20">
+      <label for="orgaoExpedidor">Orgão Expedidor</label>
+      <input type="text" id="orgaoExpedidor" name="orgaoExpedidor" 
+      ng-model="cadastro.pretendente.orgaoExpedidor" ng-tabindex="5">
+    </md-input-container>
+
+    <md-input-container flex="20">
+      <label for="dataEmissao">Data Emissão</label>
+      <md-datepicker id="dataEmissao" name="dataEmissao" 
+      ng-model="cadastro.pretendente.dataEmissao" ng-tabindex="6"></md-datepicker>
+    </md-input-container>
+
+    <md-input-container flex="20">
+      <label for="dataValidade">Data Validade</label>
+      <md-datepicker id="dataValidade" name="dataValidade" 
+      ng-model="cadastro.pretendente.dataValidade" ng-tabindex="7">
+      </md-datepicker>
+    </md-input-container>
+
+  </div>
+
+<div layout="row" layout-padding>
+    <md-input-container class="md-block" flex="25">
+      <label>Sexo</label>
+      <md-select ng-model="cadastro.pretendente.sexo" ng-tabindex="8">
+        <md-option value="M">Masculino</md-option>
+        <md-option value="F">Feminino</md-option>
+      </md-select>
+    </md-input-container>
+
+    <md-input-container class="md-block" flex="25">
+      <label>Estado Civil</label>
+      <md-select ng-model="cadastro.pretendente.estadoCivil" ng-tabindex="9">
+        <md-option value="">(Nenhum)</md-option>
+        <md-option value="solteiro">Solteiro(a)</md-option>
+        <md-option value="casado">Casado(a)</md-option>
+        <md-option value="separado">Separado(a)</md-option>
+        <md-option value="viuvo">Viuvo(a)</md-option>
+        <md-option value="divorciado">Divorciado(a)</md-option>
+      </md-select>
+    </md-input-container>
+
+    <md-input-container class="md-block" flex="25">
+      <label for="cpfConjuge">CPF Cônjuge</label>
+      <input type="number" id="cpfConjuge" name="cpfConjuge" 
+      ng-model="cadastro.pretendente.cpfConjuge" 
+      ng-tabindex="10">
+    </md-input-container>
+
+    <md-input-container class="md-block" flex="25">
+      <label for="numeroDependente">Nº Dependentes</label>
+      <input type="number" id="numeroDependente" name="numeroDependente" 
+      ng-model="cadastro.pretendente.numeroDependente" ng-tabindex="11">
+    </md-input-container>
+
+  </div>
+
+    
+<div layout="row" layout-padding>
+     <md-input-container class="md-block" flex="50">
+      <label for="nomeMae">Nome Mãe</label>
+      <input type="text" id="nomeMae" upper name="nomeMae" 
+      ng-model="cadastro.pretendente.nomeMae" ng-tabindex="12">
+    </md-input-container>
+
+    <md-input-container class="md-block" flex="50">
+      <label for="nomePai">Nome Pai</label>
+      <input type="text" id="nomePai" upper name="nomePai" 
+      ng-model="cadastro.pretendente.nomePai" ng-tabindex="13">
+    </md-input-container>
+</div>
+   
+  <div layout="row" layout-padding> 
+    <md-input-container class="md-block" flex="15">
+      <label for="telefone">Telefone</label>
+      <input mobile="tel" mascara="(99) 9999-9999?9" id="telefone" name="telefone" 
+      ng-model="cadastro.pretendente.telefone" ng-tabindex="14">
+    </md-input-container>
+
+    <md-input-container class="md-block" flex="15">
+      <label for="celular">Celular</label>
+      <input mobile="tel" mascara="(99) 9999-9999?9" id="celular" name="celular" 
+      ng-model="cadastro.pretendente.celular" ng-tabindex="15">
+    </md-input-container>
+
+    <md-input-container class="md-block" flex="15">
+      <label for="telefoneComercial">Telefone Comercial</label>
+      <input mobile="tel" mascara="(99) 9999-9999?9" id="telefoneComercial" name="telefoneComercial" 
+      ng-model="cadastro.pretendente.telefoneComercial" ng-tabindex="16">
+    </md-input-container>
+
+     <md-input-container class="md-block" flex="35">
+      <label for="nacionalidade">Nacionalidade</label>
+      <input type="text" id="nacionalidade" name="nacionalidade" 
+      ng-model="cadastro.pretendente.nacionalidade" ng-tabindex="17">
+    </md-input-container>
+
+    <md-input-container class="md-block" flex="20">
+      <label for="paisOrigem">País de Origem</label>
+      <input type="text" id="paisOrigem" name="paisOrigem" 
+      ng-model="cadastro.pretendente.paisOrigem" ng-tabindex="18">
+    </md-input-container>
+
+  </div>
+
+   
+ <div layout="row" layout-padding> 
+    <md-input-container class="md-block" flex="25">
+      <label for="tempoPais">Tempo no País</label>
+      <input type="text" id="tempoPais" name="tempoPais" 
+      ng-model="cadastro.pretendente.tempoPais" ng-tabindex="19">
+    </md-input-container>
+
+    <md-input-container class="md-block" flex="25">
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" 
+      ng-model="cadastro.pretendente.email" ng-tabindex="20">
+    </md-input-container>
+
+    <md-input-container class="md-block" flex="50">
+      <label for="email">Responsavel pela locação</label>
+      <input type="email" id="email" name="email" 
+      ng-model="cadastro.pretendente.email" ng-tabindex="21">
+    </md-input-container>
+
+  </div>
+
+<div layout="row" layout-padding> 
+    <md-input-container class="md-block" flex="25">
+      <label>Pretendente irá residir no imóvel</label>
+      <md-select ng-model="cadastro.pretendente.iraResidirImovel" ng-tabindex="22">
+        <md-option value="sim">SIM</md-option>
+        <md-option value="nao">NÃO</md-option>
+      </md-select>
+    </md-input-container>
+
+    <md-input-container class="md-block" flex="50">
+      <label>Pretendente possui renda para arcar financeiramente com a locação</label>
+      <md-select ng-model="cadastro.pretendente.possuiRendaArcarLocacao" ng-tabindex="23">
+        <md-option value="sim">SIM</md-option>
+        <md-option value="nao">NÃO</md-option>
+      </md-select>
+    </md-input-container>
+  </div>

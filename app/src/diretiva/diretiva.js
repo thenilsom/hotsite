@@ -20,6 +20,35 @@ diretiva.directive('upper', function($parse) {
 	};
 });
 
+/*Diretiva mascara
+Se o acesso for via mobile a diretiva não é ativada
+*/
+diretiva.directive('mascara', function(serviceUtil) {
+
+	function link(scope, el, attrs, ctrl) {
+		if(!serviceUtil.isMobile()){
+			$(el).mask(attrs.mascara);
+			$(el).attr('type', 'text');
+      		el.on('keyup', function () {
+				scope.$apply(function(){
+				ctrl.$setViewValue(el.val());
+			});
+      	});
+
+	}else{
+		$(el).attr('type', attrs.mobile)
+	}
+			
+}
+	
+
+	return {
+		restrict : 'A',
+		require : 'ngModel',
+		link : link
+	};
+});
+
 /**
  * Seta o tabindex passado por parametro no elemento e adiciona o manipulador de
  * evento keydow para controlar a tabulação com enter entre os elementos do
