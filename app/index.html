@@ -42,6 +42,9 @@
 
     <li role="presentation" ng-class="{'active': passo == 3}">
       <a href="#"><span class="badge">3 </span> <label>Dados Profissionais </label> </a></li>
+
+      <li role="presentation" ng-class="{'active': passo == 4}">
+      <a href="#"><span class="badge">4 </span> <label>Dados do Imóvel Pretendido </label> </a></li>
   </ul>
 </div>
 
@@ -57,6 +60,9 @@
    
     <!-- DADOS PROFISIONAIS -->
     <div ng-if="passo == 3" class="animate-if" data-ng-include="'./src/view/formulario/dadosProfissionais.html'"></div>
+
+    <!-- DADOS IMOVEL -->
+    <div ng-if="passo == 4" class="animate-if" data-ng-include="'./src/view/formulario/dadosImovel.html'"></div>
     
 
     <!-- 

@@ -35,7 +35,7 @@
           });
           $scope.cadastro = {};
 
-          $scope.proximoPasso = function(passo){
+          $scope.proximoPasso = function(){
             $scope.passo = service.obterProximoPasso($scope.passo);
           }
 
@@ -45,8 +45,9 @@
 
           $scope.pesquisarCep = function(obj){
             //se o cep for valido efetua a consulta no webservice
-            if(/^[0-9]{8}$/.test(obj.cep)){
-              service.consultarCep(obj.cep, function(dados){
+            var cep = obj.cep.replace(/\.|\-/g, '');
+            if(/^[0-9]{8}$/.test(cep)){
+              service.consultarCep(cep, function(dados){
                 if(dados !== null){
                   obj.estado = dados.uf;
                   obj.cidade = dados.localidade.toUpperCase();

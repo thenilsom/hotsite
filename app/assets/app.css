@@ -49,9 +49,9 @@ md-input-container input[type="text"] {
 }
 
 .borda-formulario{
-  border: solid 1px;
-  border-color: #cecccc;
-  border-radius: 5px;
+  border: 1px solid #B0B0B0;
+  border-radius: 12px;
+  padding: 10px;
 }
 
 #borda-icones{
@@ -229,8 +229,6 @@ md-input-container input[type="text"] {
 /*****Efeitos de transição de tela*******/
 .animate-if {
   background:white;
-  border:1px solid black;
-  padding:10px;
 }
 
 .animate-if.ng-enter, .animate-if.ng-leave {

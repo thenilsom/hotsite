@@ -37,12 +37,14 @@ angular.module('app')
 			switch(passoAtual){
 				case '1': return '2';
 				case '2' : return '3';
+				case '3' : return '4';
 				default : return passoAtual;
 			}
 		}
 
 		service.obterPassoAnterior = function(passoAtual){
 			switch(passoAtual){
+				case '4': return '3';
 				case '3': return '2';
 				case '2' : return '1';
 				default : return passoAtual;
