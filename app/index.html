@@ -38,10 +38,10 @@
     </li>
 
     <li role="presentation" ng-class="{'active': passo == 2}">
-      <a href="#"><span class="badge">2 </span> <label>Dados Profissionais</label> </a></li>
+      <a href="#"><span class="badge">2 </span> <label>Dados Residenciais</label> </a></li>
 
     <li role="presentation" ng-class="{'active': passo == 3}">
-      <a href="#"><span class="badge">3 </span> <label>Passo </label> </a></li>
+      <a href="#"><span class="badge">3 </span> <label>Dados Profissionais </label> </a></li>
   </ul>
 </div>
 
@@ -51,9 +51,12 @@
 
   	<!-- DADOS DO PRTENDENTE -->
   	<div ng-if="passo == 1" class="animate-if" data-ng-include="'./src/view/formulario/dadosPretendente.html'"></div>  
+
+    <!-- DADOS Residenciais -->
+    <div ng-if="passo == 2" class="animate-if" data-ng-include="'./src/view/formulario/dadosResidenciais.html'"></div>  
    
     <!-- DADOS PROFISIONAIS -->
-    <div ng-if="passo == 2" class="animate-if" data-ng-include="'./src/view/formulario/dadosProfissionais.html'"></div>
+    <div ng-if="passo == 3" class="animate-if" data-ng-include="'./src/view/formulario/dadosProfissionais.html'"></div>
     
 
     <!-- 
@@ -89,6 +92,7 @@
     <!-- Bibliotecas Jquery + Boostrap -->
     <script type="text/javascript" src="../node_modules/jquery/dist/jquery.min.js"></script>
     <script type="text/javascript" src="../node_modules/jquery.maskedinput/src/jquery.maskedinput.js"></script>
+    <script type="text/javascript" src="../node_modules/jquery-maskmoney/dist/jquery.maskMoney.min.js"></script>
     <script type="text/javascript" src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
     <script src="./src/app.js"></script>

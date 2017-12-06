@@ -49,6 +49,55 @@ diretiva.directive('mascara', function(serviceUtil) {
 	};
 });
 
+/*Mascara Monetária*/
+diretiva.directive('mascaraMonetaria', function(serviceUtil) {
+
+	function link(scope, el, attrs, ctrl) {
+		if(!serviceUtil.isMobile()){
+			$(el).maskMoney({
+				 prefix: "",
+         		 decimal: ",",
+         		 thousands: "."
+			});
+			$(el).attr('type', 'text');
+      		el.on('keyup', function () {
+				scope.$apply(function(){
+				ctrl.$setViewValue(el.val());
+			});
+      	});
+
+	}else{
+		$(el).attr('type', attrs.mobile)
+	}
+			
+}
+	
+
+	return {
+		restrict : 'A',
+		require : 'ngModel',
+		link : link
+	};
+});
+
+/**
+ * Implementação de 'directive', para controlar o Foco.
+ * 
+ * O componente que estiver com "data-focus", recebe o Foco.
+ */
+diretiva.directive('focus', function($timeout) {
+	return {
+
+		restrinct : 'A',
+
+		link : function(scope, element) {
+			$timeout(function() {
+				element[0].focus();
+			});
+		}
+	};
+});
+
 /**
  * Seta o tabindex passado por parametro no elemento e adiciona o manipulador de
  * evento keydow para controlar a tabulação com enter entre os elementos do
