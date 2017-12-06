@@ -22,6 +22,7 @@
     "angular-file-upload": "^2.5.0",
     "angular-material": "^1.1.0",
     "bootstrap": "^3.3.7",
+    "bootstrap-datepicker": "^1.7.1",
     "jquery": "^3.2.1",
     "jquery-maskmoney": "^3.0.2",
     "jquery.maskedinput": "^1.4.1"

@@ -1,79 +1,95 @@
 <div layout="column" layout-padding layout-gt-sm="row">
-  <md-input-container class="md-block" flex-gt-sm="25">
+  <div class="md-block" flex-gt-sm="25">
         <label for="tempoResidencia">Tempo de Residencia</label>
         <input type="text" id="tempoResidencia" name="tempoResidencia" focus
-        ng-model="cadastro.residencia.tempoResidencia" 
+        class="form-control" ng-model="cadastro.residencia.tempoResidencia" 
        ng-tabindex="2">
-  </md-input-container>
+  </div>
 
-  <md-input-container class="md-block" flex-gt-sm="50">
+  <div class="md-block" flex-gt-sm="50">
         <label for="condicaoImovel">Condições do Imóvel</label>
         <input type="text" id="condicaoImovel" name="condicaoImovel" 
-        ng-model="cadastro.residencia.condicaoImovel" 
+        class="form-control" ng-model="cadastro.residencia.condicaoImovel" 
        ng-tabindex="2">
-  </md-input-container>
+  </div>
 
-  <md-input-container class="md-block" flex-gt-sm="25">
+  <div class="md-block" flex-gt-sm="25">
         <label>Residência</label>
-        <md-select ng-model="cadastro.residencia.tipo">
-          <md-option value="alugada">Alugada</md-option>
-          <md-option value="financiada">Financiada</md-option>
-          <md-option value="propria">Própria</md-option>
-        </md-select>
-  </md-input-container>
+        <select class="form-control" ng-model="cadastro.residencia.tipo">
+          <option value="alugada">Alugada</option>
+          <option value="financiada">Financiada</option>
+          <option value="propria">Própria</option>
+        </select>
+  </div>
 
 </div>
 
 <div layout="column" layout-padding layout-gt-sm="row">
-  <md-input-container class="md-block" flex-gt-sm="80">
+  <div class="md-block" flex-gt-sm="80">
         <label for="emNome">Em nome de</label>
         <input type="text" id="emNome" name="emNome" 
-        ng-model="cadastro.residencia.emNome" 
+        class="form-control" ng-model="cadastro.residencia.emNome" 
        ng-tabindex="2">
-  </md-input-container>
+  </div>
 
-  <md-input-container class="md-block" flex-gt-sm="20">
+  <div class="md-block" flex-gt-sm="20">
         <label>Arca com aluguel</label>
-        <md-select ng-model="cadastro.residencia.arcaAluguel">
-          <md-option value="sim">SIM</md-option>
-          <md-option value="nao">NÃO</md-option>
-        </md-select>
-  </md-input-container>
+        <select class="form-control" ng-model="cadastro.residencia.arcaAluguel">
+          <option value="sim">SIM</option>
+          <option value="nao">NÃO</option>
+        </select>
+  </div>
 
 </div>
 
 <div layout="column" layout-padding layout-gt-sm="row">
-  <md-input-container class="md-block" flex-gt-sm="15">
-      <label for="aluguel">Aluguel(gasto atual)</label>
+  <div class="md-block" flex-gt-sm="15">
+      <label for="aluguel">Aluguel(atual)</label>
+      <div class="input-group">
+      <span class="input-group-addon"
+        id="basic-addon1">R$</span>
       <input mascara-monetaria mobile="number" id="aluguel" name="aluguel" 
-      ng-model="cadastro.residencia.aluguel" ng-tabindex="2">
-    </md-input-container>
+      class="form-control" ng-model="cadastro.residencia.aluguel" ng-tabindex="2">
+    </div>
+  </div>
 
-    <md-input-container class="md-block" flex-gt-sm="15">
-      <label for="agua">Água(gasto atual)</label>
+    <div class="md-block" flex-gt-sm="15">
+      <label for="agua">Água(atual)</label>
+      <div class="input-group">
+      <span class="input-group-addon"
+        id="basic-addon1">R$</span>
       <input mascara-monetaria mobile="number" id="agua" name="agua" 
-      ng-model="cadastro.residencia.agua" ng-tabindex="2">
-    </md-input-container>
+      class="form-control" ng-model="cadastro.residencia.agua" ng-tabindex="2">
+    </div>
+    </div>
 
-    <md-input-container class="md-block" flex-gt-sm="15">
-      <label for="gas">Gás(gasto atual)</label>
+    <div class="md-block" flex-gt-sm="15">
+      <label for="gas">Gás(atual)</label>
+      <div class="input-group">
+      <span class="input-group-addon"
+        id="basic-addon1">R$</span>
       <input mascara-monetaria mobile="number" id="gas" name="gas" 
-      ng-model="cadastro.residencia.gas" ng-tabindex="2">
-    </md-input-container>
+      class="form-control" ng-model="cadastro.residencia.gas" ng-tabindex="2">
+    </div>
+    </div>
 
-     <md-input-container class="md-block" flex-gt-sm="15">
-      <label for="luz">Luz(gasto atual)</label>
+     <div class="md-block" flex-gt-sm="15">
+      <label for="luz">Luz(atual)</label>
+      <div class="input-group">
+      <span class="input-group-addon"
+        id="basic-addon1">R$</span>
       <input mascara-monetaria mobile="number" id="luz" name="luz" 
-      ng-model="cadastro.residencia.luz" ng-tabindex="2">
-    </md-input-container>
+      class="form-control" ng-model="cadastro.residencia.luz" ng-tabindex="2">
+    </div>
+    </div>
 
-    <md-input-container class="md-block" flex-gt-sm="40">
+    <div class="md-block" flex-gt-sm="40">
       <label>Possui outros imóveis alugados</label>
-      <md-select ng-model="cadastro.residencia.outrosImoveisAlugados">
-        <md-option value="sim">SIM</md-option>
-        <md-option value="nao">NÃO</md-option>
-      </md-select>
-    </md-input-container>
+      <select class="form-control" ng-model="cadastro.residencia.outrosImoveisAlugados">
+        <option value="sim">SIM</option>
+        <option value="nao">NÃO</option>
+      </select>
+    </div>
 
 </div>
 
@@ -83,45 +99,45 @@
 <label>Endereço residencial anterior(se menor de 1 ano)</label>
 
 <div layout="column" layout-padding layout-gt-sm="row">
-  <md-input-container class="md-block" flex-gt-sm="15">
+  <div class="md-block" flex-gt-sm="15">
       <label for="cepAnterior">CEP</label>
       <input mobile="number" mascara="99.999-999" id="cepAnterior" name="cepAnterior" 
-      ng-model="cadastro.residencia.anterior.cep" 
+      class="form-control" ng-model="cadastro.residencia.anterior.cep" 
       ng-blur="pesquisarCep(cadastro.residencia.anterior)" ng-tabindex="2">
-    </md-input-container>
+    </div>
 
-    <md-input-container class="md-block" flex-gt-sm="15">
+    <div class="md-block" flex-gt-sm="15">
       <label for="estadoAnterior">Estado</label>
       <input type="text" id="estadoAnterior" upper name="estadoAnterior" 
-      ng-model="cadastro.residencia.anterior.estado"  ng-tabindex="2">
-    </md-input-container>
+      class="form-control" ng-model="cadastro.residencia.anterior.estado"  ng-tabindex="2">
+    </div>
 
-    <md-input-container class="md-block" flex-gt-sm="70">
+    <div class="md-block" flex-gt-sm="70">
       <label for="cidadeAnterior">Cidade</label>
       <input type="text" id="cidadeAnterior" upper name="cidadeAnterior" 
-      ng-model="cadastro.residencia.anterior.cidade"  ng-tabindex="2">
-    </md-input-container>
+      class="form-control" ng-model="cadastro.residencia.anterior.cidade"  ng-tabindex="2">
+    </div>
 
   </div>
 
 <div layout="column" layout-padding layout-gt-sm="row">
-     <md-input-container class="md-block" flex-gt-sm="50">
+     <div class="md-block" flex-gt-sm="50">
       <label for="enderecoAnterior">Endereço</label>
       <input type="text" id="enderecoAnterior" upper name="enderecoAnterior" 
-      ng-model="cadastro.residencia.anterior.endereco"  ng-tabindex="2">
-    </md-input-container>
+      class="form-control" ng-model="cadastro.residencia.anterior.endereco"  ng-tabindex="2">
+    </div>
 
-    <md-input-container class="md-block" flex-gt-sm="35">
+    <div class="md-block" flex-gt-sm="35">
       <label for="bairroAnterior">Bairro</label>
       <input type="text" id="bairroAnterior" upper name="bairroAnterior" 
-      ng-model="cadastro.residencia.anterior.bairro"  ng-tabindex="2">
-    </md-input-container>
+      class="form-control" ng-model="cadastro.residencia.anterior.bairro"  ng-tabindex="2">
+    </div>
 
-     <md-input-container class="md-block" flex-gt-sm="15">
+     <div class="md-block" flex-gt-sm="15">
       <label for="numeroAnterior">Numero</label>
       <input type="number" id="numeroAnterior" name="numeroAnterior" 
-      ng-model="cadastro.residencia.anterior.numero" ng-tabindex="2">
-    </md-input-container>
+      class="form-control" ng-model="cadastro.residencia.anterior.numero" ng-tabindex="2">
+    </div>
 </div>
 
 

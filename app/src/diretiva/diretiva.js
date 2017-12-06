@@ -81,6 +81,34 @@ diretiva.directive('mascaraMonetaria', function(serviceUtil) {
 });
 
 /**
+ * Implementação de 'directive', para Abrir o Calendário.
+ * 
+ * O input que estiver com "datepicker", abre o calendário ao ser clicado.
+ */
+diretiva.directive('datepicker', function() {
+	return {
+		restrict : 'A',
+		require : 'ngModel',
+		link : function(scope, element, attrs, ngModelCtrl) {
+
+			$(function() {
+
+				$(element).datepicker({
+					format : 'dd/mm/yyyy',
+					language: 'pt-BR',
+					autoclose : true,
+					startDate : '01/01/1900',
+					endDate : '31/12/2999',
+					todayHighlight : true,
+					clearBtn : true
+				});
+			});
+
+		}
+	}
+});
+
+/**
  * Implementação de 'directive', para controlar o Foco.
  * 
  * O componente que estiver com "data-focus", recebe o Foco.

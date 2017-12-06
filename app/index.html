@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="../node_modules/angular-material/angular-material.min.css"/>
     <link rel="stylesheet" href="assets/app.css"/>
     <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../node_modules/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css"/>
 
     <style type="text/css">
         /**
@@ -28,25 +29,27 @@
 
   </head>
 
-  <body ng-app="app" ng-controller="MainController" ng-cloak>
+<body ng-app="app" ng-controller="MainController" ng-cloak>
 
 <div class="container">    
 <div layout="row" layout-padding>
   <ul class="nav nav-pills" role="tablist">
     <li role="presentation" ng-class="{'active': passo == 1}">
-      <a href="#"><span class="badge">1 </span> <label>Dados Pretendente</label></a>
+      <a href="#"><span class="badge">1 </span> <label hide-xs>{{getLabelEtapa('1')}}</label></a>
     </li>
 
     <li role="presentation" ng-class="{'active': passo == 2}">
-      <a href="#"><span class="badge">2 </span> <label>Dados Residenciais</label> </a></li>
+      <a href="#"><span class="badge">2 </span> <label hide-xs>{{getLabelEtapa('2')}}</label> </a></li>
 
     <li role="presentation" ng-class="{'active': passo == 3}">
-      <a href="#"><span class="badge">3 </span> <label>Dados Profissionais </label> </a></li>
+      <a href="#"><span class="badge">3 </span> <label hide-xs>{{getLabelEtapa('3')}} </label> </a></li>
 
       <li role="presentation" ng-class="{'active': passo == 4}">
-      <a href="#"><span class="badge">4 </span> <label>Dados do Imóvel Pretendido </label> </a></li>
+      <a href="#"><span class="badge">4 </span> <label hide-xs>{{getLabelEtapa('4')}} </label> </a></li>
   </ul>
 </div>
+
+  <h4><label class="label label-default"> passo {{passo}} / 4 :: {{getLabelEtapa(passo)}}</label></h4>
 
 <div class="borda-formulario">
 <form name="formCad">
@@ -100,6 +103,8 @@
     <script type="text/javascript" src="../node_modules/jquery.maskedinput/src/jquery.maskedinput.js"></script>
     <script type="text/javascript" src="../node_modules/jquery-maskmoney/dist/jquery.maskMoney.min.js"></script>
     <script type="text/javascript" src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../node_modules/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
+    <script type="text/javascript" src="../node_modules/bootstrap-datepicker/dist/locales/bootstrap-datepicker.pt-BR.min.js"></script>
 
     <script src="./src/app.js"></script>
     <script src="./src/diretiva/diretiva.js"></script>

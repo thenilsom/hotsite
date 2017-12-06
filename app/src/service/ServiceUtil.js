@@ -51,6 +51,15 @@ angular.module('app')
 			}
 		}
 
+		service.labelEtapa = function(passoAtual){
+			switch(passoAtual){
+				case '1': return 'Dados Pretendente';
+				case '2' : return 'Dados Residenciais';
+				case '3' : return 'Dados Profissionais';
+				case '4' : return 'Dados do Imóvel Pretendido';
+			}
+		}
+
 		/**
 	   * Consulta o webservice viacep.com.br/ pelo cep informado
 	   * e preenche o endereço com as informações vindas.

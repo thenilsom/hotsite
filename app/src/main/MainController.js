@@ -43,6 +43,10 @@
            $scope.passo = service.obterPassoAnterior($scope.passo);
           }
 
+          $scope.getLabelEtapa = function(etapa){
+            return service.labelEtapa(etapa);
+          }
+
           $scope.pesquisarCep = function(obj){
             //se o cep for valido efetua a consulta no webservice
             var cep = obj.cep.replace(/\.|\-/g, '');
