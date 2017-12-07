@@ -20,6 +20,34 @@ diretiva.directive('upper', function($parse) {
 	};
 });
 
+/*Exibi um asterisco vermelho na label do input*/
+diretiva.directive('requerido', function($parse) {
+
+	function link(scope, element, attrs, ngModelCtrl) {
+		var label = $("label[for='"+element.attr('id')+"']");
+		$(label).prepend('<span style="color:red">*</span>');
+
+		/*ao ganhar o foco remove a classe errorAtribute*/
+		$(element).on('focus', function(){
+			$(element).removeClass('errorAttribute');
+		})
+
+		/*ao perder o foco se o valor for vazio adiciona a classe errorAtribute*/
+		$(element).on('blur', function(){
+			if(!$(element).val())
+				$(element).addClass('errorAttribute');
+		});
+		
+	}
+	
+
+	return {
+		restrict : 'A',
+		require : 'ngModel',
+		link : link
+	};
+});
+
 /*Diretiva mascara
 Se o acesso for via mobile a diretiva não é ativada
 */

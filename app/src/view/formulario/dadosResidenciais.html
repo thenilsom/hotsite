@@ -95,8 +95,7 @@
 
 
 
-
-<label>Endereço residencial anterior(se menor de 1 ano)</label>
+<div class="alert alert-info" role="alert" flex-gt-sm="40">Endereço residencial anterior(se menor de 1 ano)</div>
 
 <div layout="column" layout-padding layout-gt-sm="row">
   <div class="md-block" flex-gt-sm="15">
@@ -112,21 +111,21 @@
       class="form-control" ng-model="cadastro.residencia.anterior.estado"  ng-tabindex="2">
     </div>
 
-    <div class="md-block" flex-gt-sm="70">
+    <div class="md-block" flex-gt-sm="25">
       <label for="cidadeAnterior">Cidade</label>
       <input type="text" id="cidadeAnterior" upper name="cidadeAnterior" 
       class="form-control" ng-model="cadastro.residencia.anterior.cidade"  ng-tabindex="2">
     </div>
 
-  </div>
-
-<div layout="column" layout-padding layout-gt-sm="row">
-     <div class="md-block" flex-gt-sm="50">
+    <div class="md-block" flex-gt-sm="45">
       <label for="enderecoAnterior">Endereço</label>
       <input type="text" id="enderecoAnterior" upper name="enderecoAnterior" 
       class="form-control" ng-model="cadastro.residencia.anterior.endereco"  ng-tabindex="2">
     </div>
 
+  </div>
+
+<div layout="column" layout-padding layout-gt-sm="row">
     <div class="md-block" flex-gt-sm="35">
       <label for="bairroAnterior">Bairro</label>
       <input type="text" id="bairroAnterior" upper name="bairroAnterior" 

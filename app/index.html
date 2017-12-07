@@ -51,6 +51,15 @@
 
   <h4><label class="label label-default"> passo {{passo}} / 4 :: {{getLabelEtapa(passo)}}</label></h4>
 
+  <!-- Array erros de validação -->
+  <span id="listErrors">
+  
+    <div class="alert alert-warning" role="alert" ng-if="errors.length > 0">
+      <div ng-repeat="erro in errors">
+        <span class="glyphicon glyphicon-exclamation-sign"> </span> {{erro}}
+      </div>
+  </div>
+
 <div class="borda-formulario">
 <form name="formCad">
   

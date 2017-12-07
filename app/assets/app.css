@@ -33,14 +33,20 @@ h1 strong{
   border-top-right-radius: 2em !important;
 }
 
-md-input-container {
-    margin: 10px 0;
-}
-
-md-input-container input[type="text"] {
+/*textos maiusculos nos inputs text*/
+input[type="text"] {
     text-transform: uppercase;
 }
 
+/*classe usada para renderizar bordas vermelhas nos inputs*/
+.errorAttribute {
+    border-bottom-color: #f56a67 !important;
+    border-left-color: #f56a67 !important;
+    border-right-color: #f56a67 !important;
+    border-top-color: #f56a67 !important;
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+}
 
 .borda{
   border: solid 4px;
@@ -52,6 +58,7 @@ md-input-container input[type="text"] {
   border: 1px solid #B0B0B0;
   border-radius: 12px;
   padding: 10px;
+  margin-top: 5px;
 }
 
 #borda-icones{
@@ -212,6 +219,10 @@ md-input-container input[type="text"] {
     position: relative;
     height: 100%;
   }
+
+  .input-group span{
+  padding: 1px 5px;
+}
   
 }
 

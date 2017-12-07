@@ -29,13 +29,15 @@
 
           /*************************FUNÇÕES DO FORMULÁRIO**********************/
 
+          $scope.errors = [];
           $scope.passo = '1';
           $scope.uploader = new FileUploader({
             url : 'upload.php'
           });
           $scope.cadastro = {};
 
-          $scope.proximoPasso = function(){
+
+          $scope.proximoPasso = function(){          
             $scope.passo = service.obterProximoPasso($scope.passo);
           }
 
