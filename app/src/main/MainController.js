@@ -1,7 +1,7 @@
  angular
        .module('app')
-       .controller('MainController', ['$scope', 'serviceUtil', 'FileUploader', 
-        function($scope, service, FileUploader){
+       .controller('MainController', ['$scope', 'serviceUtil', 'validaService', 'FileUploader', 
+        function($scope, service, validador, FileUploader){
 
                
           //controla o hide/show do botão ir para topo quando chegar no fim da pagina
@@ -37,7 +37,7 @@
           $scope.cadastro = {};
 
 
-          $scope.proximoPasso = function(){          
+          $scope.proximoPasso = function(){    
             $scope.passo = service.obterProximoPasso($scope.passo);
           }
 
