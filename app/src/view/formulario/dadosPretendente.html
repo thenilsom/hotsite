@@ -1,4 +1,4 @@
-<form name="formDadosPretendente">
+<form name="formDadosPretendente" class="fundo-formulario">
    <div layout="column" layout-gt-sm="row" layout-padding>
      <div class="md-block" flex-gt-sm="50">
         <label for="nome">Nome</label>
@@ -160,7 +160,8 @@
 <div layout="column" layout-gt-sm="row" layout-padding> 
     <div class="md-block" flex-gt-sm="25">
       <label>Pretendente irá residir no imóvel</label>
-      <select class="form-control" ng-model="cadastro.pretendente.iraResidirImovel" ng-tabindex="22">
+      <select class="form-control" flex-gt-sm="40"
+      ng-model="cadastro.pretendente.iraResidirImovel" ng-tabindex="22">
         <option value="sim">SIM</option>
         <option value="nao">NÃO</option>
       </select>
@@ -168,7 +169,8 @@
 
     <div class="md-block" flex-gt-sm="30">
       <label>Possui renda para arcar com a locação</label>
-      <select class="form-control" ng-model="cadastro.pretendente.possuiRendaArcarLocacao" ng-tabindex="23">
+      <select class="form-control" flex-gt-sm="35"
+      ng-model="cadastro.pretendente.possuiRendaArcarLocacao" ng-tabindex="23">
         <option value="sim">SIM</option>
         <option value="nao">NÃO</option>
       </select>

@@ -1,4 +1,4 @@
-<form name="formDadosProfissionais">
+<form name="formDadosProfissionais" class="fundo-formulario">
 <div layout="column" layout-padding layout-gt-sm="row">
   <div class="md-block" flex-gt-sm="60">
         <label for="empresa">Empresa</label>
@@ -136,7 +136,8 @@
 <div layout="column" layout-padding layout-gt-sm="row">
      <div class="md-block" flex-gt-sm="40">
       <label>Pretendente possui referências Bancárias</label>
-      <select class="form-control" ng-model="cadastro.profissional.possuiRefBancaria">
+      <select class="form-control" flex-gt-sm="25"
+      ng-model="cadastro.profissional.possuiRefBancaria">
         <option value="sim">SIM</option>
         <option value="nao">NÃO</option>
       </select>
