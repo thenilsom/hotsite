@@ -49,6 +49,16 @@
             return service.labelEtapa(etapa);
           }
 
+          $scope.getTotal = function(obj){
+            if(service.isNullOrEmpty(obj)) return 0;
+            return service.valorOuZeroSeNull(obj.aluguel) +
+                   service.valorOuZeroSeNull(obj.iptu) +
+                   service.valorOuZeroSeNull(obj.condominio) +
+                   service.valorOuZeroSeNull(obj.agua) +
+                   service.valorOuZeroSeNull(obj.luz) +
+                   service.valorOuZeroSeNull(obj.gas);
+          }
+
           $scope.pesquisarCep = function(obj){
             //se o cep for valido efetua a consulta no webservice
             var cep = obj.cep.replace(/\.|\-/g, '');

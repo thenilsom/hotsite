@@ -153,11 +153,9 @@
     <div class="md-block">
       <label for="total">Total</label>
       <div class="input-group">
-      <span class="input-group-addon"
-        id="basic-addon1">R$</span>
-      <input mobile="number" mascara-monetaria id="total" name="total" 
-      class="form-control" ng-model="cadastro.imovel.total" ng-tabindex="2">
-    </div>
+        <span class="input-group-addon" id="basic-addon1">R$</span>
+        <span class="form-control disabled-value">{{getTotal(cadastro.imovel) | currency: "":2}}</span>
+      </div>
     </div>
 
   </div>

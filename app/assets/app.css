@@ -67,6 +67,14 @@ input[type="text"] {
    color: #717079;
 }
 
+/*fundo disabled para campos de valor*/
+.disabled-value{
+  background-color: #9c9999 !important;
+  color: white !important;
+  font-size: large !important;
+  font-weight: bold !important;
+}
+
 #borda-icones{
   border: solid 1px;
   border-radius: 5px;
@@ -226,7 +234,7 @@ input[type="text"] {
     height: 100%;
   }
 
-  .input-group span{
+  .input-group span.input-group-addon{
   padding: 1px 5px;
 }
   

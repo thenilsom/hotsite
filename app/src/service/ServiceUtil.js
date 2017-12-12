@@ -33,6 +33,20 @@ angular.module('app')
             $anchorScroll();
 		}
 
+		/*Retorna o proprio valor ou zero se nulo*/
+		service.valorOuZeroSeNull = function(valor){
+			return service.isNullOrEmpty(valor) ? 0 : service.convertToFloat(valor);
+		}
+
+		service.isNullOrEmpty = function(obj){
+			return (obj === undefined || obj === null || obj === '');
+		}
+
+		service.convertToFloat = function(str){
+			return parseFloat(str.replace(/[.]/g,"").replace(/,/, '.'));
+		}
+
+
 		service.obterProximoPasso = function(passoAtual){
 			switch(passoAtual){
 				case '1': return '2';
@@ -54,7 +68,7 @@ angular.module('app')
 		service.labelEtapa = function(passoAtual){
 			switch(passoAtual){
 				case '1': return 'Dados Pretendente';
-				case '2' : return 'Dados Residenciais';
+				case '2' : return 'Dados da Residência Atual';
 				case '3' : return 'Dados Profissionais';
 				case '4' : return 'Dados do Imóvel Pretendido';
 			}
