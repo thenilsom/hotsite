@@ -126,9 +126,9 @@
  <div layout="column" layout-gt-sm="row" layout-padding> 
 
     <div class="md-block" flex-gt-sm="50">
-      <label for="email">Responsavel pela locação</label>
-      <input type="email" id="email" name="email" 
-      class="form-control" ng-model="cadastro.pretendente.email" ng-tabindex="21">
+      <label for="respLocacao">Responsavel pela locação</label>
+      <input type="text" id="respLocacao" name="responsavelLocacao" 
+      class="form-control" ng-model="cadastro.pretendente.responsavelLocacao" ng-tabindex="21">
     </div>
 
     <div class="md-block" flex-gt-sm="25">
@@ -172,8 +172,17 @@
 
     <div class="md-block" flex-gt-sm="55">
       <label for="email">Email</label>
-      <input type="email" id="email" name="email" 
+      <input type="text" id="email" name="email"
       class="form-control" ng-model="cadastro.pretendente.email" ng-tabindex="20">
     </div>
   </div>
 </form>
+
+<div layout="row" layout-align="center center">
+    <div>
+      <md-button class="md-raised md-primary" 
+      ng-click="validarDadosPretendente('formDadosPretendente')">Seguinte 
+        <span aria-hidden="true">&rarr;</span>
+      </md-button>
+    </div>
+  </div> 

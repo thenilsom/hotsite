@@ -29,7 +29,6 @@
 
           /*************************FUNÇÕES DO FORMULÁRIO**********************/
 
-          $scope.errors = [];
           $scope.passo = '1';
           $scope.uploader = new FileUploader({
             url : 'upload.php'
@@ -48,6 +47,33 @@
           $scope.getLabelEtapa = function(etapa){
             return service.labelEtapa(etapa);
           }
+
+          /*Valida os dados do Pretendente*/
+          $scope.validarDadosPretendente = function(form){
+             $scope.errors = [];
+             validador.validarCamposObrigatorios(form, $scope.errors);
+              if(!validador.validarCpf($scope.cadastro.pretendente.cpf)){
+                $scope.errors.push("CPF inválido");
+              }
+
+              if(!validador.validarCpf($scope.cadastro.pretendente.cpfConjuge)){
+                $scope.errors.push("CPF Conjuge inválido");
+              }
+
+              if(!validador.validarEmail($scope.cadastro.pretendente.email)){
+                $scope.errors.push("EMAIL inválido");
+              }
+
+              if($scope.errors.length == 0){
+                $scope.proximoPasso();
+              }else{
+                setTimeout(function(){
+                  $scope.goTo('listErrors');
+                });
+                
+              }
+          }
+
 
           $scope.getTotal = function(obj){
             if(service.isNullOrEmpty(obj)) return 0;

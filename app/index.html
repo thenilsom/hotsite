@@ -46,10 +46,13 @@
 
       <li role="presentation" ng-class="{'active': passo == 4}">
       <a href="#"><span class="badge">4 </span> <label hide-xs>{{getLabelEtapa('4')}} </label> </a></li>
+
+      <li role="presentation" ng-class="{'active': passo == 5}">
+      <a href="#"><span class="badge">5 </span> <label hide-xs>{{getLabelEtapa('5')}} </label> </a></li>
   </ul>
 </div>
 
-  <h4><label class="label label-default"> passo {{passo}} / 4 :: {{getLabelEtapa(passo)}}</label></h4>
+  <h4><label class="label label-default"> passo {{passo}} / 5 :: {{getLabelEtapa(passo)}}</label></h4>
 
   <!-- Array erros de validação -->
   <span id="listErrors">
@@ -73,29 +76,16 @@
 
     <!-- DADOS IMOVEL -->
     <div ng-if="passo == 4" class="animate-if" data-ng-include="'./src/view/formulario/dadosImovel.html'"></div>
+
+    <!-- DADOS PESSOAIS -->
+    <div ng-if="passo == 5" class="animate-if" data-ng-include="'./src/view/formulario/dadosPessoais.html'"></div>
     
 
     <!-- 
      <input type="file" nv-file-select="" uploader="uploader" />
      -->
      
-
-
-</div>
-
-  <div layout="row" layout-align="center center">
-    <div ng-if="passo != 1">
-      <md-button class="md-raised" ng-click="passoAnterior()">
-        <span aria-hidden="true">&larr;</span> Anterior
-      </md-button>
-    </div>
-
-    <div>
-      <md-button class="md-raised md-primary" ng-click="proximoPasso()">Seguinte <span aria-hidden="true">&rarr;</span>
-      </md-button>
-    </div>
-  </div>   
-
+  </div>
 </div>
 
     <!-- Bibliotecas Angular-Material -->

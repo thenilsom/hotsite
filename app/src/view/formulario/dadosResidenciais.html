@@ -140,3 +140,16 @@
     </div>
 </div>
 </form>
+
+<div layout="row" layout-align="center center">
+    <div ng-if="passo != 1">
+      <md-button class="md-raised" ng-click="passoAnterior()">
+        <span aria-hidden="true">&larr;</span> Anterior
+      </md-button>
+    </div>
+
+    <div>
+      <md-button class="md-raised md-primary" ng-click="proximoPasso()">Seguinte <span aria-hidden="true">&rarr;</span>
+      </md-button>
+    </div>
+  </div>   

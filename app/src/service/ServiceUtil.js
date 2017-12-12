@@ -39,7 +39,9 @@ angular.module('app')
 		}
 
 		service.isNullOrEmpty = function(obj){
-			return (obj === undefined || obj === null || obj === '');
+			return obj === undefined 
+				|| obj === null 
+				|| obj.trim().length === 0;
 		}
 
 		service.convertToFloat = function(str){
@@ -52,12 +54,14 @@ angular.module('app')
 				case '1': return '2';
 				case '2' : return '3';
 				case '3' : return '4';
+				case '4' : return '5';
 				default : return passoAtual;
 			}
 		}
 
 		service.obterPassoAnterior = function(passoAtual){
 			switch(passoAtual){
+				case '5' : return '4';
 				case '4': return '3';
 				case '3': return '2';
 				case '2' : return '1';
@@ -71,6 +75,7 @@ angular.module('app')
 				case '2' : return 'Dados da Residência Atual';
 				case '3' : return 'Dados Profissionais';
 				case '4' : return 'Dados do Imóvel Pretendido';
+				case '5' : return 'Dados Pessoais';
 			}
 		}
 

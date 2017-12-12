@@ -1,5 +1,5 @@
 angular.module('app')
-.factory('validaService', function(){
+.factory('validaService', ['serviceUtil', function(util){
 
 		var service = {};
 
@@ -12,8 +12,10 @@ angular.module('app')
 			});
 		}
 
+		/*Valida o cpf*/
 		service.validarCpf = function( valor ) {
-	 
+		if(util.isNullOrEmpty(valor)) return true;
+	 	
 	    // Garante que o valor é uma string
 	    valor = valor.toString();
 	    
@@ -107,4 +109,4 @@ angular.module('app')
 
 		
 	return service;
-});
+}]);
